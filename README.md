@@ -1,1 +1,164 @@
-# prakMulOn
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 3 Basic Animation</title>
+</head>
+
+<style type="text/css">
+body{
+	background-color: #ccc;
+	overflow: hidden;
+}
+
+.main-image{
+	position: absolute; 
+	left: 50%;
+	top: 50%;
+   width: 300px; 
+   height: 300px;	
+	margin-left: -150px;
+	margin-top: -150px;	  
+   z-index: 5;
+}
+
+.circle-1{
+	position: absolute; 
+	left: 50%;
+	top: 50%;
+   width: 400px; 
+   height: 4000px;	
+	margin-left: -200px;
+	margin-top: -200px;	  
+   z-index: 1;
+}
+
+.box1 {	
+	position: absolute; 
+	left: 50%;
+	top: 50%;
+   width: 380px; 
+   height: 380px;	
+	margin-left: -190px;
+	margin-top: -190px;
+   animation: rotasikanan 5s infinite;
+   z-index: 1;
+}
+
+.box2 {	
+	position: absolute; 
+	left: 50%;
+	top: 50%;
+   width: 350px; 
+   height: 350px;	
+	margin-left: -175px;
+	margin-top: -175px;	
+   animation: rotasikiri 2s infinite;
+   z-index: 2;
+}
+.box3 {	
+	position: absolute; 
+	left: 50%;
+	top: 50%;
+   width: 400px; 
+   height: 400px;	
+	margin-left: -200px;
+	margin-top: -200px;	
+   animation: rotasikanan 4s infinite;
+   z-index: 3;
+}
+
+.box4 {	
+	position: absolute; 
+	left: 50%;
+	top: 50%;
+   width: 610px; 
+   height: 61	0px;	
+	margin-left: -320px;
+	margin-top: -320px;	
+   animation: rotasi 30s infinite;
+   z-index: 0;
+}
+
+.box5 {	
+	position: absolute; 
+	left: 50%;
+	top: 50%;
+   width: 800px; 
+   height: 800px;	
+	margin-left: -400px;
+	margin-top: -400px;	
+   animation: plane 10s infinite;
+   z-index: 0;
+}
+
+.text{
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+}
+
+
+@keyframes rotasikanan {
+  0% {
+   transform:rotate(0deg);  
+  }
+  60% {
+   	transform:rotate(180deg);  
+  }
+  100% {
+    transform:rotate(360deg);  
+  }
+}
+
+@keyframes rotasikiri {
+  0% {
+   transform:rotate(0deg);  
+  }
+  60% {
+   	transform:rotate(-180deg);  
+  }
+  100% {
+    transform:rotate(360deg);  
+  }
+}
+
+@keyframes rotasi {
+  0% {
+   transform:rotate(0deg);  
+  }
+
+  100% {
+    transform:rotate(360deg);  
+  }
+}
+
+@keyframes plane {
+  0% {
+   transform:rotate(0deg);  
+  }
+
+  100% {
+    transform:rotate(-360deg);  
+  }
+}
+</style>
+
+
+<body>
+
+<img src="forest-center.svg" alt="" class="main-image">
+
+
+ <img src="half_circle.svg" alt="" class="box2">
+<!--<img src="half_circle_2.svg" alt="" class="box1">
+<img src="half_circle_3.svg" alt="" class="box3"> -->
+<img src="pohon	.svg" alt="" class="box4">
+<img src="bird.svg" alt="" class="box5">
+
+<div class="text">
+  menuju tak terbatas dan melampaui nya~
+</div>
+
+</body>
+
+</html>
